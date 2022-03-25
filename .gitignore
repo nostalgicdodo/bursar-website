@@ -1,0 +1,9 @@
+
+.DS_Store
+
+# configuration files
+/conf*.php
+
+# User contributed content
+/content
+/wp-content/uploads
