@@ -1,0 +1,67 @@
+
+/*
+ *
+ *	Home
+ *
+ */
+@media ( min-width: 640px ) {
+	.why-us-section .row-2 {
+		direction: rtl;
+	}
+	.why-us-section .row-2 > * {
+		direction: ltr;
+	}
+}
+
+/*
+ *
+ *	Partner With Us
+ *
+ */
+@media ( min-width: 1040px ) {
+	.partner-with-us-section .point {
+		padding-bottom: var(--space-100);
+	}
+}
+.partner-with-us-section input {
+	margin-bottom: var(--space-50);
+	background-color: var(--white);
+	color: var(--neutral);
+}
+	.partner-with-us-section input:last-of-type {
+		margin-bottom: var(--space-75);
+	}
+.partner-with-us-section button[ type = "submit" ] {
+	padding-left: calc( var(--space-100) * 3 );
+	padding-right: calc( var(--space-100) * 3 );
+}
+
+
+
+/*
+ *
+ *	Team and Socials section
+ *
+ */
+@media ( max-width: 640px ) {
+	.about-us-section .logo {
+		text-align: center;
+	}
+	.about-us-section .team-heading {
+		text-align: center;
+	}
+}
+
+@media ( max-width: 1040px ) {
+	.about-us-section .name,
+	.about-us-section .designation {
+		text-align: center;
+	}
+}
+
+.about-us-section .h-social {
+}
+@media ( min-width: 640px ) {
+	.about-us-section .h-nav {
+	}
+}

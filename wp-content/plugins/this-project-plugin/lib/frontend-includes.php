@@ -1,4 +1,12 @@
 <?php
+/*
+ |
+ | Various fragments of HTML, CSS and JS that peppered throughout the markup code
+ |
+ | References:
+ | wp-includes/default-filters.php
+ |
+ */
 
 namespace ThisProject\CMS\WordPress\Frontend;
 
@@ -8,6 +16,10 @@ namespace ThisProject\CMS\WordPress\Frontend;
 
 $dependencies = [
 	'dnsPrefetches' => 'DNSPrefetches',
+	'wlwManifest' => 'WLWManifest',
+	'rsd' => 'RSD',
+	'xhtmlGenerator' => 'XHTMLGenerator',
+	'restAPIDiscovery' => 'RESTApiDiscovery',
 	'globalStyles' => 'GlobalStyles',
 	'blockStyles' => 'BlockStyles',
 	'emojis' => 'Emojis',
@@ -33,6 +45,48 @@ function removeDefaults ( $exclude = [ ] ) {
 class DNSPrefetches {
 	public static function remove () {
 		remove_action( 'wp_head', 'wp_resource_hints', 2 );
+	}
+}
+
+/**
+ | Windows Live Writer manifest file
+ |
+ */
+class WLWManifest {
+	public static function remove () {
+		remove_action( 'wp_head', 'wlwmanifest_link' );
+	}
+}
+
+/**
+ | Really Simple Discovery service endpoint
+ |
+ */
+class RSD {
+	public static function remove () {
+		remove_action( 'wp_head', 'rsd_link' );
+	}
+}
+
+/**
+ | XHTML Generator
+ |
+ */
+class XHTMLGenerator {
+	public static function remove () {
+		remove_action( 'wp_head', 'wp_generator' );
+	}
+}
+
+/**
+ | REST API Discovery
+ |
+ */
+class RESTApiDiscovery {
+	public static function remove () {
+		remove_action( 'wp_head', 'rest_output_link_wp_head' );
+		remove_action( 'wp_head', 'wp_oembed_add_discovery_links' );
+		remove_action( 'wp_head', 'wp_oembed_add_host_js' );
 	}
 }
 

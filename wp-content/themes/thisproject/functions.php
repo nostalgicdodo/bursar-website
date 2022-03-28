@@ -19,3 +19,5 @@ add_action( 'wp_enqueue_scripts', function () {
 		filemtime( THEME_PATH . '/style.css' )
 	);
 } );
+
+require_once THEME_PATH . '/settings/login-screens.php';
