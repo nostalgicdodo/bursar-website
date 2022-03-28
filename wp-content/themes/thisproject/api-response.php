@@ -1,5 +1,8 @@
 <?php
 
+use ThisProject\CMS\WordPress\Frontend;
+Frontend\disableDefaults();
+
 if ( ! have_posts() )
 	die( json_encode( [ ] ) );
 
