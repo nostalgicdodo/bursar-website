@@ -10,6 +10,8 @@
  |
  */
 
+use ThisProject\CMS\WordPress;
+
 /**
  | Login page title
  |
@@ -59,10 +61,19 @@ add_action( 'login_form', function () {
 
 
 add_action( 'login_enqueue_scripts', function () {
-	wp_enqueue_style(
-		'login-screens',
-		THEME_URI . '/settings/login-screens.css',
-		[ ],
-		filemtime( __DIR__ . '/login-screens.css' )
+	WordPress::enqueueStylesheet(
+		'login',
+		'/settings/frontend/views/login/login.css',
+	);
+	WordPress::enqueueInlineStylesheet( ':root { --image-logo: url( "' . THEME_URI . '/media/logos/logo-bursar-dark.svg" ); }' );
+	WordPress::enqueueInlineStylesheet( ':root { --bg-image-small-breakpoint: url( "' . THEME_URI . '/media/backgrounds/layered-waves-vertically-stacked.svg" ); }' );
+	WordPress::enqueueInlineStylesheet( ':root { --bg-image-large-breakpoint: url( "' . THEME_URI . '/media/backgrounds/layered-waves-horizontally-stacked.svg" ); }' );
+} );
+// Style overrides for when the login dialog is loaded as a modal on the backend
+add_action( 'admin_enqueue_scripts', function ( $hook ) {
+	WordPress::enqueueStylesheet(
+		'login-screen-within-iframe-context',
+		'/settings/frontend/views/login/login-screen-within-iframe-context.css',
+		[ 'wp-auth-check' ]
 	);
 } );

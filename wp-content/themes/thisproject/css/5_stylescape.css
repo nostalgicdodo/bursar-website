@@ -246,9 +246,10 @@ button[ disabled ] {
 .button .button-icon {
 	pointer-events: none;
 	display: inline-block;
-	width: var(--space-75);
+	width: var(--space-150);
+	height: var(--space-150);
 	vertical-align: middle;
-	transform: translateY(-2px);
+	transform: translateY(-1px);
 }
 
 

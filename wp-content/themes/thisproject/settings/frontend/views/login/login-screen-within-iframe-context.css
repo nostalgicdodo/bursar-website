@@ -1,0 +1,54 @@
+
+/* Container */
+#wp-auth-check-wrap #wp-auth-check {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	margin: 0;
+	width: 100%;
+	max-height: none !important;
+
+	padding: 0;
+
+	background-color: transparent;
+}
+/* Close button */
+#wp-auth-check-wrap .wp-auth-check-close {
+	position: relative;
+	top: 3.5rem;
+	left: 8.5rem;
+	transform: scale(1.5);
+	z-index: 1;
+}
+
+/* Iframe Container */
+#wp-auth-check-wrap #wp-auth-check-form {
+	width: 380px;
+	max-height: 640px;
+}
+
+/* #wp-auth-check-wrap #wp-auth-check {
+	left: 50%;
+	width: 410px;
+	max-height: 600px !important;
+	margin: 0;
+	background-color: white;
+	transform: translateX( -50% );
+} */
+
+/* Below styles do not take effect as it's supposed to */
+@media ( screen and ( max-width: 380px ) ) {
+	#wp-auth-check-wrap #wp-auth-check {
+		top: 0;
+		left: 50%;
+		bottom: 0;
+		width: 95%;
+	}
+}

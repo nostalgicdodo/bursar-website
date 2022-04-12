@@ -40,21 +40,21 @@ global $ver;
 
 
 <!-- JS Modules -->
-<!-- <script type="text/javascript" src="/plugins/base64/base64.js__v3.7.2.min.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/plugins/js-cookie/js-cookie__v3.0.1.min.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/utils.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/http.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/forms.js<?= $ver ?>"></script> -->
+<!-- <script type="text/javascript" src="<?= THEME_URI ?>/plugins/base64/base64.js__v3.7.2.min.js<?= $ver ?>"></script> -->
+<!-- <script type="text/javascript" src="<?= THEME_URI ?>/plugins/js-cookie/js-cookie__v3.0.1.min.js<?= $ver ?>"></script> -->
+<script type="text/javascript" src="<?= THEME_URI ?>/js/modules/utils.js<?= $ver ?>"></script>
+<script type="text/javascript" src="<?= THEME_URI ?>/js/modules/http.js<?= $ver ?>"></script>
+<script type="text/javascript" src="<?= THEME_URI ?>/js/modules/forms.js<?= $ver ?>"></script>
+<script type="text/javascript" src="<?= THEME_URI ?>/js/modules/form-utils.js<?= $ver ?>"></script>
 <?php //if ( ! THIS_ENV_PRODUCTION ) : ?>
-	<!-- <script type="text/javascript" src="/js/modules/disclaimer.js<?= $ver ?>"></script> -->
+	<!-- <script type="text/javascript" src="<?= THEME_URI ?>/js/modules/disclaimer.js<?= $ver ?>"></script> -->
 <?php //endif; ?>
-<!-- <script type="text/javascript" src="/js/modules/navigation.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/device-charge.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/video_embed.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/modal_box.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/carousel.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/phone-country-code.js<?= $ver ?>"></script> -->
-<!-- <script type="text/javascript" src="/js/modules/form-utils.js<?= $ver ?>"></script> -->
+<script type="text/javascript" src="<?= THEME_URI ?>/js/modules/navigation.js<?= $ver ?>"></script>
+<!-- <script type="text/javascript" src="<?= THEME_URI ?>/js/modules/device-charge.js<?= $ver ?>"></script> -->
+<!-- <script type="text/javascript" src="<?= THEME_URI ?>/js/modules/video_embed.js<?= $ver ?>"></script> -->
+<script type="text/javascript" src="<?= THEME_URI ?>/js/modules/modal_box.js<?= $ver ?>"></script>
+<!-- <script type="text/javascript" src="<?= THEME_URI ?>/js/modules/carousel.js<?= $ver ?>"></script> -->
+<!-- <script type="text/javascript" src="<?= THEME_URI ?>/js/modules/phone-country-code.js<?= $ver ?>"></script> -->
 
 <?php wp_footer() ?>
 

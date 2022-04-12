@@ -332,3 +332,10 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+
+/* Hidden attribute
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+[ hidden ][ hidden ][ hidden ][ hidden ][ hidden ] {
+	display: none !important;
+}

@@ -134,7 +134,7 @@ body.login {
 }
 @media ( max-width: 1039px ) {
 	body.login {
-		background-image: url( "../media/backgrounds/layered-waves-vertically-stacked.svg" );
+		background-image: var(--bg-image-small-breakpoint);
 		background-size: cover;
 	}
 }
@@ -147,7 +147,7 @@ body.login {
 		flex-basis: 60%;
 		height: 100%;
 
-		background-image: url( "../media/backgrounds/layered-waves-horizontally-stacked.svg" );
+		background-image: var(--bg-image-large-breakpoint);
 		background-size: cover;
 		/* animation: ambient-motion 90s linear infinite; */
 		/* animation-delay: 1.9s; */
@@ -204,9 +204,9 @@ body.login #login h1 a {
 	margin: 0;
 	width: auto;
 	height: 0;
-	padding-bottom: 21.77%;	/* aspect ratio = ( 27 / 124 ) x 100 */
+	padding-bottom: 26.77%;	/* aspect ratio = ( h / w ) x 100 */
 
-	background-image: url( "/media/logo.svg" );
+	background-image: var(--image-logo);
 	background-size: 100%;
 
 	pointer-events: none;

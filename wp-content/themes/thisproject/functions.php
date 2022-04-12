@@ -5,19 +5,19 @@ namespace ThisProject;
 define( 'THEME_PATH', get_stylesheet_directory() );
 define( 'THEME_URI', get_stylesheet_directory_uri() );
 
+require_once THEME_PATH . '/lib/frontend-includes.php';
+require_once THEME_PATH . '/lib/wordpress.php';
 
 
-add_action( 'after_setup_theme', function () {
-	add_theme_support( 'block-templates' );
-} );
+use ThisProject\CMS\WordPress;
+use ThisProject\CMS\WordPress\Frontend;
 
-add_action( 'wp_enqueue_scripts', function () {
-	wp_enqueue_style(
-		'thisproject-style',
-		get_stylesheet_uri(),
-		[ 'twentytwentytwo-style' ],
-		filemtime( THEME_PATH . '/style.css' )
-	);
-} );
+WordPress::setBaseFilePath( THEME_PATH );
 
-require_once THEME_PATH . '/settings/login-screens.php';
+
+
+
+
+require_once THEME_PATH . '/settings/theme-supports.php';
+require_once THEME_PATH . '/settings/routing.php';
+require_once THEME_PATH . '/settings/frontend/index.php';

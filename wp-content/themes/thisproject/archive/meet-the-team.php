@@ -1,7 +1,8 @@
 <?php
 /*
  |
- | This lists the 3 co-founders along with their photographs
+ | Meet the Team
+ | 	Lists the 3 co-founders along with their photographs
  |
  | Where was this used?
  | 	Home page
