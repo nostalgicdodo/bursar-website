@@ -68,7 +68,6 @@ add_action( 'plugins_loaded', __NAMESPACE__ . '\\' . 'init__AfterOtherPluginsHav
  | General Internals
  |
  */
-require_once PLUGIN_PATH . '/lib/frontend-includes.php';
 require_once PLUGIN_PATH . '/routing/transform-page-routes-to-api-routes.php';
 require_once PLUGIN_PATH . '/objects/guid.php';
 require_once PLUGIN_PATH . '/users/user-url.php';
