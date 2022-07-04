@@ -171,7 +171,7 @@ define( 'FS_METHOD', 'direct' );
  |
  */
 if ( ! defined( 'UPLOADS' ) )
-	define( 'UPLOADS', 'content/cms/' );  # this one is relative to `ABSPATH`
+	define( 'UPLOADS', 'content/cms' );  # this one is relative to `ABSPATH`
 
 
 /**
