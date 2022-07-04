@@ -415,21 +415,24 @@ select:disabled {
  *
  */
 
-.h1 { font-size: var(--h1); }
-.h2 { font-size: var(--h2); }
-.h3 { font-size: var(--h3); }
-.h4 { font-size: var(--h4); }
-.h5 { font-size: var(--h5); }
-.h6 { font-size: var(--h6); }
-.p 	{ font-size: var(--p); }
-.label { font-size: var(--label); }
-.small { font-size: var(--small); }
+h1, .h1 { font-size: var(--h1); }
+h2, .h2 { font-size: var(--h2); }
+h3, .h3 { font-size: var(--h3); }
+h4, .h4 { font-size: var(--h4); }
+h5, .h5 { font-size: var(--h5); }
+h6, .h6 { font-size: var(--h6); }
+p, .p 	{ font-size: var(--p); }
+label, .label { font-size: var(--label); }
+small, .small { font-size: var(--small); }
+h1, h2, h3, h4,
 .h1, .h2, .h3, .h4 {
 	font-family: 'Playfair Display', Times, serif;
 }
+h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
 	line-height: 1.125;
 }
+p , label, small,
 .p , .label, .small {
 	line-height: 1.375;
 }

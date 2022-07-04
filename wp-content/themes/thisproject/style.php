@@ -12,6 +12,7 @@ global $ver;
 
 <!-- Modules -->
 <link rel="stylesheet" type="text/css" href="<?= THEME_URI ?>/css/modules/header.css<?= $ver ?>">
+<link rel="stylesheet" type="text/css" href="<?= THEME_URI ?>/css/modules/wp-generated-content.css<?= $ver ?>">
 
 <!-- Pages + Sections -->
 <link rel="stylesheet" type="text/css" href="<?= THEME_URI ?>/css/pages/home.css<?= $ver ?>">

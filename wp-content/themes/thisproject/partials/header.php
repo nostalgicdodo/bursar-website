@@ -76,7 +76,7 @@ $bodyClasses = esc_attr( implode( ' ', get_body_class() ) );
 						<li class="label text-uppercase inline-middle space-25"><a href="/#why-us-section">Why Us</a></li>
 						<li class="label text-uppercase inline-middle space-25"><a href="/#lenders-section">Lenders</a></li>
 						<li class="label text-uppercase inline-middle space-25"><a href="/#institutes-section">Institutes</a></li>
-						<li class="label text-uppercase inline-middle space-25-top-bottom space-25-left space-50-right"><a href="/#about-us-section">About</a></li>
+						<li class="label text-uppercase inline-middle space-25-top-bottom space-25-left space-50-right"><a href="#about-us-section">About</a></li>
 					</ul>
 				</nav>
 			</div>
@@ -94,7 +94,7 @@ $bodyClasses = esc_attr( implode( ' ', get_body_class() ) );
 						<li class="label text-uppercase inline-middle space-25"><a href="/#why-us-section">Why Us</a></li>
 						<li class="label text-uppercase inline-middle space-25"><a href="/#lenders-section">Lenders</a></li>
 						<li class="label text-uppercase inline-middle space-25"><a href="/#institutes-section">Institutes</a></li>
-						<li class="label text-uppercase inline-middle space-25-top-bottom space-25-left space-50-right"><a href="/#about-us-section">About</a></li>
+						<li class="label text-uppercase inline-middle space-25-top-bottom space-25-left space-50-right"><a href="#about-us-section">About</a></li>
 					</ul>
 				</nav>
 			</div>

@@ -1,0 +1,34 @@
+
+/*
+ |
+ | WordPress Generated Content
+ |
+ |
+ */
+.wp-generated-content h1,
+.wp-generated-content h2,
+.wp-generated-content h3,
+.wp-generated-content h4,
+.wp-generated-content h5,
+.wp-generated-content h6,
+.wp-generated-content p {
+	display: block;
+}
+
+.wp-generated-content h1,
+.wp-generated-content h2,
+.wp-generated-content h3,
+.wp-generated-content h4,
+.wp-generated-content h5,
+.wp-generated-content h6 {
+	margin-top: var(--space-150);
+	margin-bottom: var(--space-50);
+}
+
+.wp-generated-content h2 {
+	font-size: var(--h3);
+}
+
+.wp-generated-content p {
+	font-size: var(--h5);
+}
