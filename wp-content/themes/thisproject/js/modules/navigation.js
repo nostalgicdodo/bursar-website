@@ -9,13 +9,15 @@
  */
 $( document ).on( "click", "a[ href *= '#' ]", function ( event ) {
 	let $link = $( event.target ).closest( "a" )
-	let href = $link.get( 0 ).href
-	let fullPathOfCurrentPage = window.location.origin + window.location.pathname
+	let linkURLObject = new URL( $link.get( 0 ).href )
 
 	// If the link is not an in-page link, do nothing and resume default behavior
-	let sectionId = href.replace( fullPathOfCurrentPage, "" )
-	if ( sectionId === href )
+	if ( linkURLObject.origin !== window.location.origin )
 		return;
+	if ( linkURLObject.pathname !== window.location.pathname )
+		return;
+
+	let sectionId = linkURLObject.hash
 
 	event.preventDefault()
 
