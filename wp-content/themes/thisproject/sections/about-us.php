@@ -12,7 +12,7 @@
 			<div class="columns small-offset-1 small-10 medium-offset-0 medium-12 large-8">
 				<div class="h3 strong text-dark space-25-bottom">About us.</div>
 				<div class="columns small-12 medium-12 large-10 space-50-top space-150-bottom">
-					<div class="h6 text-dark">A group of experienced, fun to work with, customer-focused individuals based out of Bangalore with significant experience in the education sector, complemented by long-standing associations with top-ranked educational institutions. We are passionate about changing student lending and simplifying the borrowing process.</div>
+					<div class="h6 text-dark">A group of experienced, fun to work with, customer-focused individuals based out of Bangalore with significant experience in the education sector, complemented by long-standing associations with top-ranked educational institutions. We are passionate about changing and simplifying the payment process for students.</div>
 				</div>
 				<div class="columns small-12 medium-7 space-150-bottom">
 					<div class="h-social h5 strong text-dark space-100-top space-50-bottom"><span>Address</span></div>
@@ -25,7 +25,7 @@
 				<div class="row space-50-top">
 					<div class="columns small-12 medium-8 large-12 space-100-bottom">
 						<div class="h-social h5 strong text-dark space-50-bottom"><span>Connect with us</span></div>
-						<div class="social-icons">
+						<div class="social-icons hidden">
 							<a href="https://twitter.com/TechBursar" target="_blank"><img class="block button fill-indigo-2" src="<?= THEME_URI ?>/media/icons/icon-social-twitter-white.svg<?= $ver ?>" alt="Twitter"></a>
 							<a href="https://www.linkedin.com/company/bursarpayments/" target="_blank"><img class="block button fill-indigo-2" src="<?= THEME_URI ?>/media/icons/icon-social-linkedin-white.svg<?= $ver ?>" alt="LinkedIn"></a>
 						</div>
@@ -40,10 +40,10 @@
 						<div class="h-nav h5 strong text-dark space-25-bottom"><span>Links</span></div>
 						<ul class="p strong text-indigo-2">
 							<li><a class="space-25-top-bottom" href="/">Home</a></li>
-							<li><a class="space-25-top-bottom" href="/#study-now-pay-later-section">SNPL</a></li>
+							<li><a class="space-25-top-bottom hidden" href="/#study-now-pay-later-section">SNPL</a></li>
 							<li><a class="space-25-top-bottom" href="/#why-us-section">Why Us</a></li>
-							<li><a class="space-25-top-bottom" href="/#lenders-section">Lenders</a></li>
-							<li><a class="space-25-top-bottom" href="/#partner-with-us-section">Partner with Us</a></li>
+							<li><a class="space-25-top-bottom hidden" href="/#lenders-section">Lenders</a></li>
+							<li><a class="space-25-top-bottom hidden" href="/#partner-with-us-section">Partner with Us</a></li>
 							<li><a class="space-25-top-bottom" href="/#institutes-section">Institutes</a></li>
 							<li><a class="space-25-top-bottom" href="#about-us-section">Team</a></li>
 							<li><a class="space-25-top-bottom" target="_blank" href="/privacy-policy">Privacy Policy</a></li>

@@ -19,16 +19,25 @@ require_once __DIR__ . '/partials/header.php';
 ?>
 
 <!-- Intro Section -->
+<style>
+	@media ( min-width: 1040px ) {
+		.intro-section .heading {
+			padding-top: var(--space-150);
+			transform-origin: top left;
+			transform: scale( 1.5 );
+		}
+	}
+</style>
 <section class="intro-section space-100-top space-200-bottom no-overflow js_section_intro" id="intro-section" data-section-title="Intro Section" data-section-slug="intro-section">
 	<div class="container">
 		<div class="row">
 			<div class="columns small-11 medium-6 large-4 space-100-bottom">
-				<div class="h1 strong text-dark space-50-bottom">Simplifying Education Fee Payments</div>
-				<div class="h5 text-neutral-6 space-100-bottom">Connecting multiple lenders to pre-qualified users through a quick & easy loan marketplace.</div>
-				<a class="button fill-indigo-2 text-white text-uppercase" href="/#study-now-pay-later-section">Study Now Pay Later</a>
+				<div class="heading h1 strong text-dark space-50-bottom">Simplifying Education Fee Payments</div>
+				<div class="h5 text-neutral-6 space-100-bottom hidden">Connecting multiple lenders to pre-qualified users through a quick & easy loan marketplace.</div>
+				<a class="button fill-indigo-2 text-white text-uppercase hidden" href="/#study-now-pay-later-section">Study Now Pay Later</a>
 			</div>
 			<div class="columns small-12 medium-6 large-offset-2 large-6 space-100-top-bottom">
-				<img src="<?= THEME_URI ?>/media/graphics/laptop-mockup.png<?= $ver ?>" alt="">
+				<img src="<?= THEME_URI ?>/media/graphics/laptop-mockup-alt.png<?= $ver ?>" alt="">
 			</div>
 		</div>
 		<div class="row text-center space-100-top">
@@ -52,9 +61,9 @@ require_once __DIR__ . '/partials/header.php';
 	<div class="container">
 		<div class="row">
 			<div class="columns small-12 medium-8 medium-offset-2 large-6 large-offset-3 text-center">
-				<div class="label text-uppercase text-purple-2 space-50-bottom">Study now Pay later</div>
-				<div class="h2 strong text-dark space-25-bottom">One Click, Multiple Lenders, Real Offers</div>
-				<div class="h6 text-neutral-6 space-100-bottom">Building Loan Marketplace for Education</div>
+				<div class="label text-uppercase text-purple-2 space-50-bottom hidden">Study now Pay later</div>
+				<div class="h2 strong text-dark space-25-bottom">One Click, Easy Payments</div>
+				<div class="h6 text-neutral-6 space-100-bottom hidden">Building Loan Marketplace for Education</div>
 			</div>
 		</div>
 		<div class="row">
@@ -65,13 +74,13 @@ require_once __DIR__ . '/partials/header.php';
 			</div>
 			<div class="columns small-10 small-offset-1 medium-4 medium-offset-0 text-center space-50-left-right">
 				<img src="<?= THEME_URI ?>/media/graphics/graphic-snpl-2.png<?= $ver ?>" alt="" class="block radius-50">
-				<div class="h6 strong text-dark space-25-top-bottom">Compare Offers from Multiple Lenders</div>
-				<div class="p text-neutral-6 space-100-bottom">Lenders on Bursar offer some of the lowest interest rates.</div>
+				<div class="h6 strong text-dark space-25-top-bottom">Compare Offers from Multiple Options</div>
+				<div class="p text-neutral-6 space-100-bottom">Payment options on Bursar offer some of the greatest value.</div>
 			</div>
 			<div class="columns small-10 small-offset-1 medium-4 medium-offset-0 text-center space-50-left-right">
 				<img src="<?= THEME_URI ?>/media/graphics/graphic-snpl-3.png<?= $ver ?>" alt="" class="block radius-50">
 				<div class="h6 strong text-dark space-25-top-bottom">Fee Payment in Less than 5 Minutes</div>
-				<div class="p text-neutral-6 space-100-bottom">Verifying on bursar does not impact borrowers credit score.</div>
+				<div class="p text-neutral-6 space-100-bottom">Verifying on bursar is quick and easy.</div>
 			</div>
 		</div>
 	</div>
@@ -85,24 +94,24 @@ require_once __DIR__ . '/partials/header.php';
 		<div class="row space-100-bottom">
 			<div class="columns small-12 medium-6 large-5 text-dark">
 				<div class="label text-uppercase text-purple-2 space-50-bottom">Why Us</div>
-				<div class="h3 strong space-25-bottom">Our core vision is for users to find instant and affordable finance with ease.</div>
-				<div class="p space-200-bottom">We partner with Banks and Non Banking Financial Institutions to provide best loan options to our users that supports their academic goals.</div>
+				<div class="h3 strong space-25-bottom">Our core vision is for users to experience easy and instant payments.</div>
+				<div class="p space-200-bottom">We partner with Banks and Financial Institutions to provide the best payment options to our users that support their academic goals.</div>
 
 				<div class="h2 strong space-25-bottom">Marketplace</div>
 				<div class="h6 strong space-75-bottom">Compare Offers</div>
 				<ol class="p">
 					<li class="space-50-bottom">By integrating with any institute’s ERP system, users can get direct access from the dashboard to the marketplace.</li>
-					<li class="space-50-bottom">Comparing offers between lenders and picking the ideal education loan payment plan is intuitive and effortless.</li>
-					<li>Providing verified leads to Digital Lenders, making loan disbursement a quick and easy process.</li>
+					<li class="space-50-bottom">Comparing offers between payment options is intuitive and effortless.</li>
+					<li>Providing verified transactions to institutes is a quick and easy process.</li>
 				</ol>
 			</div>
 
 			<div class="columns small-12 medium-6 large-offset-1">
-				<img src="<?= THEME_URI ?>/media/graphics/phone-marketplace.png<?= $ver ?>" alt="" class="block">
+				<img src="<?= THEME_URI ?>/media/graphics/phone-payment-flow.png<?= $ver ?>" alt="" class="block">
 			</div>
 		</div>
 
-		<div class="row row-2 clearfix">
+		<div class="row row-2 clearfix hidden">
 			<div class="columns small-12 medium-6 large-5 large-offset-1 text-dark">
 				<div class="h2 strong space-25-bottom">Loan Disbursement</div>
 				<div class="h6 strong space-75-bottom">Digital Lending</div>
@@ -123,18 +132,18 @@ require_once __DIR__ . '/partials/header.php';
 	</div>
 
 </section>
-<div class="wave-container row">
+<div class="wave-container row hidden">
 	<img class="wave-img" src="<?= THEME_URI ?>/media/backgrounds/wave-purple-1.svg<?= $ver ?>" style="--invert: -1">
 </div>
 <!-- END: Why Us Section -->
 
 <!-- Lenders Section -->
-<section class="lenders-section space-100-top-bottom" id="lenders-section" data-section-title="Lenders Section" data-section-slug="lenders-section">
+<section class="lenders-section space-100-top-bottom hidden" id="lenders-section" data-section-title="Lenders Section" data-section-slug="lenders-section">
 	<div class="container">
 		<div class="row text-center">
 			<div class="columns small-12 medium-8 large-5 text-center">
 				<div class="label text-uppercase text-purple-2 space-50-bottom">Lenders</div>
-				<div class="h2 strong text-dark space-25-bottom">Pre-verified <br>Hypergrowth</div>
+				<div class="h2 strong text-dark space-25-bottom hidden">Pre-verified <br>Hypergrowth</div>
 				<div class="h6 text-neutral-6 space-100-bottom">Partner with Bursar and Grow through Accelerated Customer Acquisition</div>
 			</div>
 		</div>
@@ -157,7 +166,7 @@ require_once __DIR__ . '/partials/header.php';
 <!-- END: Lenders Section -->
 
 <!-- Partner With Us Section -->
-<section class="partner-with-us-section space-100-top" id="partner-with-us-section" data-section-title="Partner With Us Section" data-section-slug="partner-with-us-section">
+<section class="partner-with-us-section space-100-top hidden" id="partner-with-us-section" data-section-title="Partner With Us Section" data-section-slug="partner-with-us-section">
 	<div class="container">
 		<div class="row">
 			<div class="label text-uppercase text-purple-2 space-50-bottom">Partner With Us</div>
@@ -216,7 +225,7 @@ require_once __DIR__ . '/partials/header.php';
 <!-- END: Partner With Us Section -->
 
 <!-- Institutes Section -->
-<div class="wave-container row">
+<div class="wave-container row fill-purple-1">
 	<img class="wave-img" src="<?= THEME_URI ?>/media/backgrounds/wave-purple-3.svg<?= $ver ?>">
 </div>
 <section class="space-100-top-bottom fill-purple-3" id="institutes-section" data-section-title="Institutes Section" data-section-slug="institutes-section">
@@ -229,7 +238,7 @@ require_once __DIR__ . '/partials/header.php';
 		</div>
 		<div class="row text-center">
 			<div class="columns small-10 medium-8 large-5 space-200-bottom">
-				<div class="p text-white">Modernise your Infrastructure with Bursar’s Digital Lending and Payment Solutions.</div>
+				<div class="p text-white">Modernise your Infrastructure with Bursar’s Digital Payment Solutions.</div>
 			</div>
 		</div>
 		<div class="row">
