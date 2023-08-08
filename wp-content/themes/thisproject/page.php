@@ -11,6 +11,8 @@ use ThisProject\CMS\WordPress\Frontend;
 Frontend\removeDefaults();
 
 WordPress::enqueueScript( 'jquery' );
+WordPress::enqueueScript( 'home', '/js/pages/home/home.js' );
+WordPress::enqueueScript( 'home-forms', '/js/pages/home/forms.js' );
 
 require_once __DIR__ . '/partials/header.php';
 
@@ -31,9 +33,5 @@ require_once __DIR__ . '/partials/header.php';
 <!-- END: Main Content Section -->
 
 <?php require_once __DIR__ . '/sections/about-us.php'; ?>
-
-
-
-
 
 <?php require_once __DIR__ . '/partials/footer.php'; ?>
